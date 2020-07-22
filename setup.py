@@ -198,7 +198,7 @@ def setup_package():
                     language='c++', include_dirs=include_dirs,
                     extra_link_args=extra_link_args))
 
-        setup(name='neuralcoref',
+        setup(name='c3_neuralcoref',
             version='4.0',
             description="Coreference Resolution in spaCy with Neural Networks",
             url='https://github.com/huggingface/neuralcoref',
@@ -224,8 +224,8 @@ def setup_package():
                 "numpy>=1.15.0",
                 "boto3",
                 "requests>=2.13.0,<3.0.0",
-                "spacy>=2.1.0"],
-            setup_requires=['wheel', 'spacy>=2.1.0'],
+                "spacy>=2.1.0,<2.2.0"],
+            setup_requires=['wheel', 'spacy>=2.1.0,<2.2.0'],
             python_requires=">=3.6",
             packages=PACKAGES,
             package_data=PACKAGE_DATA,
