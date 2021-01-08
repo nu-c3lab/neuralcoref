@@ -224,6 +224,8 @@ def setup_package():
                 "numpy>=1.15.0",
                 "boto3",
                 "requests>=2.13.0,<3.0.0",
+                "pytest",
+                "cython>=0.25",
                 "spacy>=2.1.0,<2.2.0"],
             setup_requires=['wheel', 'spacy>=2.1.0,<2.2.0'],
             python_requires=">=3.6",
